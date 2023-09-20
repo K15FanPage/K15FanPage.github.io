@@ -9,6 +9,33 @@ body {
     text-align: center;
 }
 
+nav {
+    background-color: rgb(88, 88, 88);
+    padding: 20px 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 2.2vh;
+}
+
+nav ul li {
+    transition: .3s ease;
+}
+
+nav ul li:hover {
+    text-shadow: 0 0 5px black;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 #main-title {
     font-size: 8vh;
     padding: 1rem;
@@ -63,26 +90,32 @@ body {
 
 .daj-drugo-dete {
     background-image: url(img/drugo-dete-daj.png);
+    animation: slide-left 1s;
 }
 
 .da-si-malo-starija {
     background-image: url(img/da-si-malo-starija.png);
+    animation: slide-right 1s;
 }
 
 .kaj-e-pivoto{
     background-image: url(img/kaj-e-pivoto.png);
+    animation: slide-left 1s;
 }
 
 .abe-ja-sam-risto {
     background-image: url(img/ja-sam-risto-ti-si-blazo.png);
+    animation: slide-right 1s;
 }
 
 .kompiri {
     background-image: url(img/kompiri.png);
+    animation: slide-left 1s;
 }
 
 .teing-so-crevoto {
     background-image: url(img/teiing-so-crevoto.png);
+    animation: slide-right 1s;
 }
 
 .block h1 {
@@ -115,3 +148,37 @@ body {
     }
 }
 
+@keyframes slide-left {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+section {
+    font-size: 2.2vh;
+}
+
+.main-section .container {
+    width: 80%;
+}
