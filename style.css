@@ -5,4 +5,11 @@
 
 body {
     background-color: rgb(189, 189, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#main-title {
+    font-size: 7vh;
+    padding: 1rem;
 }
