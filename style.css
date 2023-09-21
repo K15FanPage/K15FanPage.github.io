@@ -182,3 +182,19 @@ section {
 .main-section .container {
     width: 80%;
 }
+
+/*responsive*/
+
+@media (max-width: 500px) {
+    .soundboard {
+        display: block;
+    }
+
+    .block {
+        background-position: center;
+    }
+
+    #main-title {
+        font-size: 5vh;
+    }
+}
