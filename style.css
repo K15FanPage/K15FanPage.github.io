@@ -127,22 +127,27 @@ nav ul li a {
   background-image: url(img/privatno.png);
   animation: slide-right 1s;
 }
+
 .jorgo {
   background-image: url(img/jorgo.png);
   animation: slide-right 1s;
 }
+
 .neam-kola {
   background-image: url(img/nea-kola.png);
   animation: slide-right 1s;
 }
+
 .vnatre-e {
   background-image: url(img/vnatre-e.png);
   animation: slide-right 1s;
 }
+
 .tango {
   background-image: url(img/tango.png);
   animation: slide-right 1s;
 }
+
 .so-mu-e-na-via {
   background-image: url(img/so-u-e-na-via.png);
   animation: slide-right 1s;
@@ -216,7 +221,6 @@ section {
 }
 
 /*responsive*/
-
 @media (max-width: 500px) {
   .soundboard {
     display: block;
@@ -234,9 +238,14 @@ section {
   #main-title {
     font-size: 5vh;
   }
-  
+
   .block h1 {
     font-size: 2.7vh;
+  }
+
+  #videoPlayer iframe {
+    height: 30vh;
+    width: 80%;
   }
 }
 
@@ -256,9 +265,7 @@ section {
   margin-top: 4rem;
 }
 
-#videoPlayer iframe{
+#videoPlayer iframe {
   border-radius: 5px;
-  width: 60%;
-  height: 80vh;
   box-shadow: 0 0 6px black;
 }
