@@ -1,3 +1,4 @@
+//play sound script 
 function playSound(x) {
   let sound = document.getElementsByTagName("audio");
   for (let i = 0; i < sound.length; i++) {

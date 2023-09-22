@@ -203,6 +203,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 3rem;
 }
 
@@ -249,4 +250,15 @@ section {
 
 ::-webkit-scrollbar {
   width: 8px;
+}
+
+#randomVideoH1 {
+  margin-top: 4rem;
+}
+
+#videoPlayer iframe{
+  border-radius: 5px;
+  width: 60%;
+  height: 80vh;
+  box-shadow: 0 0 6px black;
 }
