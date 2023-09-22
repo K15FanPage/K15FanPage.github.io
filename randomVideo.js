@@ -10,7 +10,7 @@ function randomVideo() {
     let videoIndex = Math.floor(Math.random() * videos.length);
     console.log(videoIndex);
 
-    let html = '<div id="videoPlayer"><iframe width="720" height="480"   src="http://www.youtube.com/embed/' + videos[videoIndex] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+    let html = '<div id="videoPlayer"><iframe width="720" height="480"   src="https://www.youtube.com/embed/' + videos[videoIndex] + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
     document.write(html);
 }
 randomVideo();
