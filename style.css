@@ -153,6 +153,11 @@ nav ul li a {
   animation: slide-right 1s;
 }
 
+.toso-menja-guma {
+  background-image: url(img/toso-menja-guma.png);
+  animation: slide-right 1s;
+}
+
 .block h1 {
   color: white;
   text-shadow: 0 0 5px black;
