@@ -18,7 +18,7 @@ navUl = document.getElementById("nav-ul");
 //burger-haus
 function openNav() {
   openNavBtn.style.display = "none";
-  navUl.style.animation = "slide-left 1s";
+  navUl.style.animation = "slide-left .5s";
   navUl.style.display = "block";
   closeNavBtn.style.display = "block";
 }
