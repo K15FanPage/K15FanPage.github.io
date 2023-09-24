@@ -209,17 +209,19 @@ nav ul li a {
   }
 
 }
-@keyframes zoom-in{
-  from{
+
+@keyframes zoom-in-scale {
+  from {
     transform: scale(0.8);
   }
-  to{
+
+  to {
     transform: scale(1);
   }
 }
-p {
-  animation: zoom-in 1s;
 
+.zoom-in {
+  animation: zoom-in-scale 1s;
 }
 
 .main-section {
@@ -286,4 +288,8 @@ section {
 #videoPlayer iframe {
   border-radius: 5px;
   box-shadow: 0 0 6px black;
+}
+
+#content-title {
+  padding: 1.5rem;
 }

@@ -10,3 +10,5 @@ function playSound(x) {
     }
   }
 }
+
+//gallery
