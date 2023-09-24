@@ -11,4 +11,23 @@ function playSound(x) {
   }
 }
 
-//gallery
+openNavBtn = document.getElementById("openNav");
+closeNavBtn = document.getElementById("closeNav");
+navUl = document.getElementById("nav-ul");
+
+//burger-haus
+function openNav() {
+  openNavBtn.style.display = "none";
+  navUl.style.animation = "slide-left 1s";
+  navUl.style.display = "block";
+  closeNavBtn.style.display = "block";
+}
+
+function closeNav() {
+  openNavBtn.style.display = "block"
+  navUl.style.animation = "fade-out .2s";
+  setTimeout(() => {
+    navUl.style.display = "none";
+  }, 200);
+  closeNavBtn.style.display = "none";
+}
