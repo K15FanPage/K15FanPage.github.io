@@ -120,7 +120,7 @@ nav ul li a {
 
 .operator {
   background-image: url(img/operator.png);
-  animation: slide-right 1s;
+  animation: slide-left 1s;
 }
 
 .privatno {
@@ -135,7 +135,7 @@ nav ul li a {
 
 .neam-kola {
   background-image: url(img/nea-kola.png);
-  animation: slide-right 1s;
+  animation: slide-left 1s;
 }
 
 .vnatre-e {
@@ -145,12 +145,12 @@ nav ul li a {
 
 .tango {
   background-image: url(img/tango.png);
-  animation: slide-right 1s;
+  animation: slide-left 1s;
 }
 
 .so-mu-e-na-via {
   background-image: url(img/so-u-e-na-via.png);
-  animation: slide-right 1s;
+  animation: slide-left 1s;
 }
 
 .toso-menja-guma {
@@ -207,6 +207,19 @@ nav ul li a {
   to {
     transform: translateX(0);
   }
+
+}
+@keyframes zoom-in{
+  from{
+    transform: scale(0.8);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+p {
+  animation: zoom-in 1s;
+
 }
 
 .main-section {
