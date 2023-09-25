@@ -217,6 +217,14 @@ section {
     background-position: center;
   }
 
+  .main-section {
+    padding: 1rem;
+  } 
+
+  .main-section .container{
+    width: 95%;
+  } 
+
   .block h1 img {
     width: 35px;
     height: 35px;
