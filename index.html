@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo/k15logo-staro.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
     <!--ad sense-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351970168193347"
         crossorigin="anonymous"></script>
@@ -15,48 +16,76 @@
 </head>
 
 <body>
-    <h1 id="main-title">K-15 Fan Page Разбираш</h1>
+    <h1 id="main-title">K-15 Fan Page</h1>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Домашна адреса</a></li>
-            <li><a href="soundboard.html">Саундборд разбираш</a></li>
+        <div class="responsive-nav">
+            <img id="openNav" src="img/burger_haus/nav-bar-ico.png" alt="Meni" onclick="openNav()">
+            <img id="closeNav" src="img/burger_haus/x-ico.png" alt="Tisni ja vratata da go tisnam na majka ti" onclick="closeNav()">
+        </div>
+        <ul id="nav-ul">
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="soundboard.html">Soundboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <section class="main-section">
-        <div class="container">
+        <div class="container zoom-in">
             <p>
-                <b>К-15</b> — популарно македонско хумористично телевизиско шоу разбираш кое започнало во средината на
-                1990-тите години разбираш и
-                претежно е во формат на епизоди разбираш составени од кратки хумористично-сатирични скечови на
-                македонскио јазик разбираш. К-15
-                како термин се користи и за други проекти, не само во контекст на хумористичните тв серии туку и било
-                кој друг
-                настап на познатата група, како на пример песните од Дуо трио разбираш, рекламите кои тие ги снимаат или
-                гостувањето во
-                други емисии и филмови како Балкан Кан разбираш.
-                К-15 е основано и оригинално го сочинуваат Васко Тодоров разбираш, Љупчо „Бубо“ Каров разбираш и Бранко
-                Огњановски разбираш, но често се
-                појавуваат и други глумци бе разбираш. Тројцата основачи се исто така и дел од сценаристите и
-                режисерите.<br>
-                Главни ликови:<br>
+                K-15 was a Macedonian comedy show project established in the mid-1990s in Macedonia. It is mostly made
+                up of episodes of short comedy sketches and spoofs on the Macedonian language. K-15 as a term is used
+                for other projects with the group, such as the comical music of Duo Trio, different kinds of commercials
+                or guest appearances in other shows and films such as Balkankan.
 
-               
-                Миле Паника (Бранко Огњановски) е еден од трите најкаракеристични и најпопуларни ликови особено популарен на почетоците на К-15. Миле Паника има карактеристичен изговор (или говорна маана) и често употребува српски (југословенски) изрази за дополнителен хумористичен ефект на неговите реплики.<br>
-                Тошо Малерот (Васко Тодоров) е еден од трите најкаракеристични и најпопуларни ликови особено популарен на почетоците на К-15. На Тошо најчесто му се случиваат незгоди и неправди, па оттаму и неговиот прекар Малерот. Тошо често користи скопски сленг и е познат по фразата „батка“ која ја користи кога се обраќа некому, но и по навика.<br>
-                Цацко Конопишки (Бубо Каров) е еден од трите најкаракеристични и најпопуларни ликови особено популарен на почетоците на К-15. Цацко потекнува од Конопиште, Кавадаречко (како и Бубо Каров кој е од Кавадарци) и често зборува со специфичен кавадаречки дијалект за дополнителен хумористичен ефект на неговите реплики.<br>
-                Ристо (Васко Тодоров) е еден од двајцата ликови кои претставуваат стереотипичен македонски земјоделец. Ристо е од струмичко-радовишкиот крај и зборува на дијалект. Исто така често (и смешно) во својот говор ја користи фразата „разбираш“ како дел од сленгот или дијалектот.<br>
-                Блажо (Бранко Огњановски) е еден од двајцата ликови кои претставуваат стереотипичен македонски земјоделец. Блажо е исто така од струмичко-радовишкиот крај и зборува со соодветен дијалект. Најчесто Блажо се појавува во тандем со Ристо.<br>
-                Полицаецот (Васко Тодоров) е лик кој го отликува стереотипот за полицајците во Македонија. Најчесто неименуван, тој има одлики на смотан и не многу учен човек.<br>
-                Албанецот (Бранко Огњановски) е стереотипичен лик кој најчесто се појавува во скечови каде што се прави сатирична критика на меѓуетничките односи меѓу Албанците и другите националности во Македонија (претежно Македонците). Овој лик некогаш е именуван иронично како Зоран (што е нетипично албанско име, особено изговорено со неговиот акцент) и е познат по тоа што е снаодлив и успева да излезе како добар и умен иако не секогаш е. Ликот е познат по тоа што има изговор како стереотипичниот албанец од Македонија.<br>
-                Гркот (Бранко Огњановски) е лик кој најчесто се појавува со перика од долка виткана (налик на афро фризура) коса и ги изговара македонските зборови со специфичен акцент како грк. Овој лик некогаш е именуван како Јорго и има улога на надреден и е на повисоко социјално ниво од Македонците и често има навредлив и понижувачки однос кон нив.<br>
-                Охриѓанецот (Бранко Огњановски) е лик кој претставува стереотипичен охриѓанец и познат е по охридскиот дијалект и нетрпеливоста со скопјаните, особено во туристички контекст. Овој лик некогаш, но ретко е именуван како Климе (или Наум, Наумче)<br>
-                Џони Џанак (Бранко Огњановски) е стереотипичен македонски наркоман, често прикажуван издрогиран или во криза, говори споро со наркомански сленг и ја користи фразата ,,џони".<br>
+                K-15 was formed by Vasko Todorov, Ljupčo "Bubo" Karov and Branko Ognjanovski, with frequent appearances
+                of other actors/comedians. The three founders are also co-directors and co-producers.
 
+                <h2 id="content-title">History</h2>
+
+                The three characters decided to create a unique job opportunity for themselves - a weekly comedy show,
+                not only providing them with a salary, but also entertaining and making laugh all those who live, know
+                of, or have experience with the social and cultural situation in Macedonia. The first episode was
+                broadcast on November 23, 1994 on A1 TV.
+
+                Since then, the show has provided strong social, political, and economic criticism of various peculiar
+                events in the Macedonian society, ethnic tolerance, stereotypes, taboo-topics and the environment. K-15
+                aired on many TV channels such as MTV 1, Sitel, A1, Alfa TV and K-15 TV. In 2008 the group decided to
+                form their own independent channel known as K-15 TV. The channel airs predominately Macedonian music
+                with occasional K-15 sketches and commercials. K-15 TV is available on the satellite network too. They
+                also have their own YouTube channel with more than 900 videos.
+
+                <h2 id="content-title">Main Characters</h2>
             
+                Mile Panika (Branko Ognjanovski) is one of the three most characteristic and popular characters, especially popular at the beginning of K-15. 
+                Mile Panika has a distinctive accent (or speech impediment) and often uses Serbian (Yugoslavian) expressions to add humorous effect to his lines.
+                <br>
+                Tosho Malerot (Vasko Todorov) is one of the three most characteristic and popular characters, especially popular at the beginning of K-15. Accidents and injustices often happen to Tosho, hence his nickname Malerot.
+                Toso often uses Skopje slang and is known for the phrase "batka" which he uses when addressing someone, but also out of habit.
+                <br>
+                Cacko Konopishki (Bubo Karov) is one of the three most characteristic and popular characters, especially popular at the beginning of K-15.
+                Cacko comes from Konopiste, Kavadarecko (as well as Bubo Karov who is from Kavadarci) and often speaks with a specific Kavadarci dialect for an additional humorous effect of his lines
+                <br>
+                Risto (Vasko Todorov) is one of the two characters who represent a stereotypical Macedonian farmer. Risto is from the Strumica-Radovica region and speaks with a dialect.
+                He also often (and funny) uses the phrase "you understand" in his speech as part of slang or dialect.
+                <br>
+                Blazo (Branko Ognjanovski) is one of the two characters who represent a stereotypical Macedonian farmer.
+                Blažo is also from the Strumica-Radoviška region and speaks a suitable dialect. Most of the time, Blajo appears in tandem with Risto.
+                <br>
+                The policeman (Vasko Todorov) is a character that typifies the stereotype of policemen in Macedonia. Mostly unnamed, he has the characteristics of a withdrawn and not very learned man.
+                <br>
+                The Albanian (Branko Ognjanovski) is a stereotypical character who often appears in sketches where satirical criticism of inter-ethnic relations between Albanians and other nationalities in Macedonia (mostly Macedonians) is made.
+                This character is once ironically named Zoran (which is an atypical Albanian name, especially pronounced with his accent) and is known for being resourceful and manages to come off as good and smart even though he isn't always. The character is known for having an accent like the stereotypical Albanian from Macedonia.
+                <br>
+                The Greek (Branko Ognjanovski) is a character who usually appears with a wig made of dolka curled (similar to an afro hairstyle) hair and pronounces Macedonian words with a specific accent like a Greek.
+                This character is once named Jorgo and has the role of a superior and is on a higher social level than the Macedonians and often has an insulting and humiliating attitude towards them.
+                <br>
+                The man from Ohrid (Branko Ognjanovski) is a character who represents a stereotypical man from Ohrid and is known for his Ohrid dialect and impatience with the people of Skopje, especially in a tourist context. This character is sometimes, but rarely, named Klyme (or Naum, Naumce)
+                <br>
+                Johnny Dzhanak (Branko Ognjanovski) is a stereotypical Macedonian drug addict, often depicted drugged or in crisis, speaks slowly with drug slang and uses the phrase "Johnny".
             </p>
-            <h1 id="randomVideoH1">Рандом Видео Разбираш</h1>
+            <h1 id="randomVideoH1">Video of the day</h1>
         </div>
     </section>
 

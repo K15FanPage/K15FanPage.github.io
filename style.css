@@ -157,6 +157,14 @@ nav ul li a {
   background-image: url(img/toso-menja-guma.png);
   animation: slide-right 1s;
 }
+.gumeni-cizmi {
+  background-image: url(img/gumeni-cizmi.png);
+  animation: slide-left 1s;
+}
+.hemoroidi {
+  background-image: url(img/hemoroidi.png);
+  animation: slide-right 1s;
+}
 
 .block h1 {
   color: white;
@@ -179,47 +187,8 @@ nav ul li a {
   animation: fade 0.7s;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-left {
-  from {
-    transform: translateX(-400px);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-right {
-  from {
-    transform: translateX(400px);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-
-}
-@keyframes zoom-in{
-  from{
-    transform: scale(0.8);
-  }
-  to{
-    transform: scale(1);
-  }
-}
-p {
-  animation: zoom-in 1s;
-
+.zoom-in {
+  animation: zoom-in-scale 1s;
 }
 
 .main-section {
@@ -238,8 +207,16 @@ section {
   width: 80%;
 }
 
+.responsive-nav {
+  display: none;
+}
+
 /*responsive*/
 @media (max-width: 500px) {
+  nav {
+    padding: 8px;
+  }
+
   .soundboard {
     display: block;
   }
@@ -247,6 +224,14 @@ section {
   .block {
     background-position: center;
   }
+
+  .main-section {
+    padding: 3rem 1rem;
+  } 
+
+  .main-section .container{
+    width: 95%;
+  } 
 
   .block h1 img {
     width: 35px;
@@ -264,6 +249,23 @@ section {
   #videoPlayer iframe {
     height: 30vh;
     width: 80%;
+  }
+
+  .responsive-nav {
+    display: block;
+  }
+
+  .responsive-nav #closeNav {
+    display: none;
+  }
+
+  .responsive-nav #openNav {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
   }
 }
 
@@ -286,4 +288,8 @@ section {
 #videoPlayer iframe {
   border-radius: 5px;
   box-shadow: 0 0 6px black;
+}
+
+#content-title {
+  padding: 1.5rem;
 }

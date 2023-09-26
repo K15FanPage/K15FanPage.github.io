@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo/k15logo-staro.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
     <!--ad sense-->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351970168193347"
         crossorigin="anonymous"></script>
@@ -15,12 +16,18 @@
 </head>
 
 <body>
-    <h1 id="main-title">К-15 Soundboard</h1>
+    <h1 id="main-title">K-15 Soundboard</h1>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Домашна адреса</a></li>
-            <li><a href="sounboard.html">Саундборд разбираш</a></li>
+   <nav>
+        <div class="responsive-nav">
+            <img id="openNav" src="img/burger_haus/nav-bar-ico.png" alt="Meni" onclick="openNav()">
+            <img id="closeNav" src="img/burger_haus/x-ico.png" alt="Tisni ja vratata da go tisnam na majka ti" onclick="closeNav()">
+        </div>
+        <ul id="nav-ul">
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="soundboard.html">Soundboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
@@ -29,7 +36,7 @@
             <div class="daj-drugo-dete block" onclick="playSound(1)">
                 <div class="layer">
                     <h1>
-                        Дај друго дете
+                        Daj drugo dete
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
@@ -43,7 +50,7 @@
             <div class="da-si-malo-starija block" onclick="playSound(2)">
                 <div class="layer">
                     <h1>
-                        Еј да си мало старија
+                        Ej da si malo starija
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
@@ -56,7 +63,7 @@
             <div class="kaj-e-pivoto block" onclick="playSound(3)">
                 <div class="layer">
                     <h1>
-                        Кај е пивото бе
+                        Kaj e pivoto be
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
@@ -69,7 +76,7 @@
             <div class="abe-ja-sam-risto block" onclick="playSound(4)">
                 <div class="layer">
                     <h1>
-                        Море, ја сам Ристо, ти си Блажо
+                        More, ja sam Risto ti si Blazo
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
@@ -82,7 +89,7 @@
             <div class="kompiri block" onclick="playSound(5)">
                 <div class="layer">
                     <h1>
-                        Ти мислеш на мене до твојте компири ми е дојдело
+                        Ti misles na mene do tvojte kompiri mi e dojdelo
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
@@ -95,7 +102,7 @@
             <div class="teing-so-crevoto block" onclick="playSound(6)">
                 <div class="layer">
                     <h1>
-                        Теинг со цревото
+                        Teiing so crevoto
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
@@ -108,7 +115,7 @@
             <div class="operator block" onclick="playSound(7)">
                 <div class="layer">
                     <h1>
-                        Оператор 16
+                        Operator 16
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
@@ -121,7 +128,7 @@
             <div class="privatno block" onclick="playSound(8)">
                 <div class="layer">
                     <h1>
-                        Приватно
+                        Privatno
                         <img src="img/icons/speaker.png">
                     </h1>
                     <audio src="audio/K-15 - prijatno.mp3">
@@ -132,12 +139,12 @@
             <div class="neam-kola block" onclick="playSound(9)">
                 <div class="layer">
                     <h1>
-                        Па ја неам кола
+                        Pa ja neam kola
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
 
-                <audio src="audio/K-15 - Ohridski maraton.mp3">
+                <audio src="audio/K-15 -Neam kola.mp3">
 
                     Could not load audio.
                 </audio>
@@ -145,12 +152,12 @@
             <div class="vnatre-e block" onclick="playSound(10)">
                 <div class="layer">
                     <h1>
-                        Внатре е викни
+                        Vnatre e vikni
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
 
-                <audio src="audio/K-15 - Ohridski maraton.mp3">
+                <audio src="audio/K-15 - vnatre vikni.mp3">
 
                     Could not load audio.
                 </audio>
@@ -158,12 +165,12 @@
             <div class="tango block" onclick="playSound(11)">
                 <div class="layer">
                     <h1>
-                        Мајсторе може едно танго
+                        Majstore moze edno tango
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
 
-                <audio src="audio/K-15 - Ohridski maraton.mp3">
+                <audio src="audio/K-15 - Moze edno tango.mp3">
 
                     Could not load audio.
                 </audio>
@@ -171,12 +178,12 @@
             <div class="jorgo block" onclick="playSound(12)">
                 <div class="layer">
                     <h1>
-                        Јорго калимера Јорго
+                        Jorgo kalimera Jorgo
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
 
-                <audio src="audio/K-15 - Ohridski maraton.mp3">
+                <audio src="audio/K-15 - jorgo kalimera.mp3">
 
                     Could not load audio.
                 </audio>
@@ -184,12 +191,12 @@
             <div class="so-mu-e-na-via block" onclick="playSound(13)">
                 <div class="layer">
                     <h1>
-                        Шо му е на виа бе
+                        Sho mu e na via be
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
 
-                <audio src="audio/K-15 - Ohridski maraton.mp3">
+                <audio src="audio/K-15 -So mu e na via be.mp3">
 
                     Could not load audio.
                 </audio>
@@ -198,12 +205,39 @@
             <div class="toso-menja-guma block" onclick="playSound(14)">
                 <div class="layer">
                     <h1>
-                        Тошо менја гума
+                        Tosho menja guma
                         <img src="img/icons/speaker.png">
                     </h1>
                 </div>
 
-                <audio src="audio/K-15 - Ohridski maraton.mp3">
+                <audio src="audio/K-15 - kako se menjalo guma.mp3">
+
+                    Could not load audio.
+                </audio>
+            </div>
+           
+            <div class="gumeni-cizmi block" onclick="playSound(15)">
+                <div class="layer">
+                    <h1>
+                        Gumeni cizmi
+                        <img src="img/icons/speaker.png">
+                    </h1>
+                </div>
+
+                <audio src="audio/K-15 - gumeni cizmi.mp3">
+
+                    Could not load audio.
+                </audio>
+            </div>
+            <div class="hemoroidi block" onclick="playSound(16)">
+                <div class="layer">
+                    <h1>
+                        Hemoroidi
+                        <img src="img/icons/speaker.png">
+                    </h1>
+                </div>
+
+                <audio src="audio/K-15 - hemoroidi.mp3">
 
                     Could not load audio.
                 </audio>
