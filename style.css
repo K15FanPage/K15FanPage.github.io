@@ -40,11 +40,7 @@ nav ul li a {
   font-size: 8vh;
   padding: 1rem;
 }
-#main-title{
-  animation: float 2.5s;
-  animation-iteration-count: infinite;
-  }
-  
+
 .block {
   height: 400px;
   margin: 15px 5px;
@@ -292,8 +288,22 @@ section {
 #videoPlayer iframe {
   border-radius: 5px;
   box-shadow: 0 0 6px black;
+  transition: .3s ease;
+}
+
+#videoPlayer iframe:hover {
+  transform: scale(1.03);
 }
 
 #content-title {
   padding: 1.5rem;
+}
+
+.rainbow {
+  background: linear-gradient(to right, rgb(131, 131, 0), rgb(0, 0, 0), rgb(0, 85, 0), rgb(0, 34, 109));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow_anim 6s infinite, float 2.5s infinite;
+  background-size: 400% 10%;
 }
