@@ -14,7 +14,7 @@
   }
 
   to {
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
@@ -36,7 +36,6 @@
   to {
     transform: translateX(0);
   }
-
 }
 
 @keyframes zoom-in-scale {
@@ -48,15 +47,14 @@
     transform: scale(1);
   }
 }
-@keyframes float{
-  0%{
+@keyframes float {
+  0% {
     transform: translateY(5px);
   }
-  50%{
+  50% {
     transform: translateY(0);
   }
-  100%{
+  100% {
     transform: translateY(5px);
-    animation-timing-function: unset;
   }
 }

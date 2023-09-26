@@ -13,7 +13,8 @@ function randomVideo() {
         '3J_Dnt9OZFs',
         'xU_OImeuMJ0',
         'SRiOlOGCx_A',
-        'YS2WRZCnLIQ'
+        'YS2WRZCnLIQ',
+        'vg-bHWgarXY'
     ];
 
     let videoIndex = Math.floor(Math.random() * videos.length);
