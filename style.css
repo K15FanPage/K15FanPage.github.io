@@ -40,7 +40,11 @@ nav ul li a {
   font-size: 8vh;
   padding: 1rem;
 }
-
+#main-title{
+  animation: float 2.5s;
+  animation-iteration-count: infinite;
+  }
+  
 .block {
   height: 400px;
   margin: 15px 5px;
