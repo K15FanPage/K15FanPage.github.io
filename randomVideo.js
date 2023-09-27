@@ -21,7 +21,8 @@ function randomVideo() {
     console.log(videoIndex);
 
     let html = '<div id="videoPlayer"><iframe width="720" height="480" src="https://www.youtube.com/embed/' + videos[videoIndex] + '?autoplay=0" frameborder="0" allowfullscreen></iframe></div>';
-    document.write(html);
+    //document.write(html);
+    document.getElementById("random-vid-container").innerHTML = html;
 }
 
 randomVideo();
