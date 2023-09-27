@@ -58,7 +58,7 @@ function showRight() {
   let x = latestX;
   x++;
 
-  if(x >= images_length) {
+  if (x >= images_length) {
     x = 0;
   }
 
@@ -72,12 +72,37 @@ function showLeft() {
   let x = latestX;
   x--;
 
-  if(x < 0) {
-    x = images_length-1;
+  if (x < 0) {
+    x = images_length - 1;
   }
 
   console.log(x);
   displayImg(x);
 
   latestX = x;
+}
+
+function watchVideo(vid) {
+  let videoLink = [
+    'https://youtu.be/hpQmR39-ZWQ?t=4',
+    'https://youtu.be/gJgDXBJ1LHE?t=53',
+    'https://youtu.be/NosIDDkv2Ls?t=388',
+    'https://youtu.be/jVyPKabgCQw?t=248',
+    'https://youtu.be/3NXzcZgJmSQ?t=77',
+    'https://youtu.be/NosIDDkv2Ls?t=162',
+    'https://youtu.be/Tp1mnQ12Hz8?t=347',
+    'https://youtu.be/OnZWBggRHw0?t=5',
+    'https://youtu.be/S318tIL4FA0?t=217',
+    'https://youtu.be/bBK-CdG3bq4?t=19',
+    'https://youtu.be/bBK-CdG3bq4?t=187',
+    'https://youtu.be/OnZWBggRHw0?t=65',
+    'https://youtu.be/NosIDDkv2Ls?t=299',
+    'https://youtu.be/hpQmR39-ZWQ?t=102',
+    'https://youtu.be/2PP7Le_3v74?t=70',
+    'https://youtu.be/NosIDDkv2Ls?t=43'
+  ]
+
+  if (confirm("Do you want to watch the video?")) {
+    window.location.href = videoLink[vid];
+  }
 }

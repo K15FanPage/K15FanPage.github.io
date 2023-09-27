@@ -325,7 +325,7 @@ section {
 }
 
 .rainbow {
-  background: linear-gradient(to right, rgb(131, 131, 0), rgb(0, 0, 0), rgb(0, 85, 0), rgb(0, 34, 109),rgb(151, 0, 0));
+  background: linear-gradient(to right, rgb(131, 131, 0), rgb(0, 0, 0), rgb(0, 85, 0), rgb(0, 34, 109), rgb(151, 0, 0));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -391,4 +391,28 @@ section {
 
 #display .right {
   transform: translateX(-44px);
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.image a {
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
