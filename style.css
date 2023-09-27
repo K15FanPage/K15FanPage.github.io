@@ -288,6 +288,10 @@ section {
   #display .right {
     transform: translateX(-34px) !important;
   }
+
+  .gallery {
+    grid-template-columns: auto auto !important;
+  }
 }
 
 ::-webkit-scrollbar-track {
