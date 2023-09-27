@@ -3,7 +3,7 @@
   <p>Welcome to the Fan Page of K-15</p>
   <p>
     Visit our website 
-    <a href="https://k15fanpage.github.io">here</a>.
+    <a href="https://k15fanpage.github.io" target="_blank">here</a>.
   </p>
   <img src="img/logo/k15logo-original.png" id="logo" width="250" height="250">
   <div id="languages">
