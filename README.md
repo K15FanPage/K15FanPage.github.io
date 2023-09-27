@@ -3,9 +3,11 @@
   <p>Welcome to the Fan Page of K-15</p>
   <p>
     Visit our website 
-    <a href="https://k15fanpage.github.io">here</a>.
+    <a href="https://k15fanpage.github.io" target="_blank">here</a>.
   </p>
+  
   <img src="img/logo/k15logo-original.png" id="logo" width="250" height="250">
+  
   <div id="languages">
     <h3>Languages/Tools used</h3>
     <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg"  title="HTML" alt="HTML" width="40" height="40"/>&nbsp;
