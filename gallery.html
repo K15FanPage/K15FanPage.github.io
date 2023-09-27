@@ -20,10 +20,11 @@
 <body>
     <h1 id="main-title">K-15 Gallery</h1>
 
-   <nav>
+    <nav>
         <div class="responsive-nav">
             <img id="openNav" src="img/burger_haus/nav-bar-ico.png" alt="Meni" onclick="openNav()">
-            <img id="closeNav" src="img/burger_haus/x-ico.png" alt="Tisni ja vratata da go tisnam na majka ti" onclick="closeNav()">
+            <img id="closeNav" src="img/burger_haus/x-ico.png" alt="Tisni ja vratata da go tisnam na majka ti"
+                onclick="closeNav()">
         </div>
         <ul id="nav-ul">
             <li><a href="index.html">Home page</a></li>
@@ -35,16 +36,79 @@
 
     <section class="main-section">
         <div class="container">
+
+            <div id="display">
+                <span class="arrow left" onclick="showLeft()">&#8918;</span>
+
+                <img class="displayImg" src="img/da-si-malo-starija.png" alt="da si malo starija">
+                <img class="displayImg" src="img/drugo-dete-daj.png" alt="drugo dete">
+                <img class="displayImg" src="img/gumeni-cizmi.png" alt="gumeni cizmi">
+                <img class="displayImg" src="img/hemoroidi.png" alt="hemoroidi">
+                <img class="displayImg" src="img/ja-sam-risto-ti-si-blazo.png" alt="ja sam risto ti si blazo">
+                <img class="displayImg" src="img/jorgo.png" alt="jorgo">
+                <img class="displayImg" src="img/kaj-e-pivoto.png" alt="kaj e pivoto">
+                <img class="displayImg" src="img/kompiri.png" alt="kompiri">
+                <img class="displayImg" src="img/nea-kola.png" alt="nea kola">
+                <img class="displayImg" src="img/operator.png" alt="operator 16">
+                <img class="displayImg" src="img/privatno.png" alt="privatno">
+                <img class="displayImg" src="img/so-u-e-na-via.png" alt="so mu e na via">
+                <img class="displayImg" src="img/tango.png" alt="tango">
+                <img class="displayImg" src="img/teiing-so-crevoto.png" alt="teeing so crevoto">
+                <img class="displayImg" src="img/toso-menja-guma.png" alt="toso menja guma">
+                <img class="displayImg" src="img/vnatre-e.png" alt="vnatre e">
+                
+                <span class="arrow right" onclick="showRight()">&#8919;</span>
+            </div>
+
             <div class="gallery">
-                <div class="display"></div>
-
-                <img src="img/da-si-malo-starija.png" alt="da si malo starija">
-                <img src="img/drugo-dete-daj.png" alt="drugo dete">
-                <img src="img/gumeni-cizmi.png" alt="gumeni cizmi">
-                <img src="img/hemoroidi.png" alt="hemoroidi">
-                <img src="img/ja-sam-risto-ti-si-blazo.png" alt="ja sam risto ti si blazo">
-                <img src="img/jorgo.png" alt="jorgo">
-
+                <div class="image">
+                    <img src="img/da-si-malo-starija.png" alt="da si malo starija" onclick="displayImg(0)">
+                </div>
+                <div class="image">
+                    <img src="img/drugo-dete-daj.png" alt="drugo dete" onclick="displayImg(1)">
+                </div>
+                <div class="image">
+                    <img src="img/gumeni-cizmi.png" alt="gumeni cizmi" onclick="displayImg(2)">
+                </div>
+                <div class="image">
+                    <img src="img/hemoroidi.png" alt="hemoroidi" onclick="displayImg(3)">
+                </div>
+                <div class="image">
+                    <img src="img/ja-sam-risto-ti-si-blazo.png" alt="ja sam risto ti si blazo" onclick="displayImg(4)">
+                </div>
+                <div class="image">
+                    <img src="img/jorgo.png" alt="jorgo" onclick="displayImg(5)">
+                </div>
+                <div class="image">
+                    <img src="img/kaj-e-pivoto.png" alt="kaj e pivoto" onclick="displayImg(6)">
+                </div>
+                <div class="image">
+                    <img src="img/kompiri.png" alt="kompiri" onclick="displayImg(7)">
+                </div>
+                <div class="image">
+                    <img src="img/nea-kola.png" alt="nea kola" onclick="displayImg(8)">
+                </div>
+                <div class="image">
+                    <img src="img/operator.png" alt="operator 16" onclick="displayImg(9)">
+                </div>
+                <div class="image">
+                    <img src="img/privatno.png" alt="privatno" onclick="displayImg(10)">
+                </div>
+                <div class="image">
+                    <img src="img/so-u-e-na-via.png" alt="so mu e na via" onclick="displayImg(11)">
+                </div>
+                <div class="image">
+                    <img src="img/tango.png" alt="tango" onclick="displayImg(12)">
+                </div>
+                <div class="image">
+                    <img src="img/teiing-so-crevoto.png" alt="teeing so crevoto" onclick="displayImg(13)">
+                </div>
+                <div class="image">
+                    <img src="img/toso-menja-guma.png" alt="toso menja guma" onclick="displayImg(14)">
+                </div>
+                <div class="image">
+                    <img src="img/vnatre-e.png" alt="vnatre e" onclick="displayImg(15)">
+                </div>
             </div>
         </div>
     </section>

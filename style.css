@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -157,10 +158,12 @@ nav ul li a {
   background-image: url(img/toso-menja-guma.png);
   animation: slide-right 1s;
 }
+
 .gumeni-cizmi {
   background-image: url(img/gumeni-cizmi.png);
   animation: slide-left 1s;
 }
+
 .hemoroidi {
   background-image: url(img/hemoroidi.png);
   animation: slide-right 1s;
@@ -227,11 +230,11 @@ section {
 
   .main-section {
     padding: 3rem 1rem;
-  } 
+  }
 
-  .main-section .container{
+  .main-section .container {
     width: 95%;
-  } 
+  }
 
   .block h1 img {
     width: 35px;
@@ -266,6 +269,24 @@ section {
   nav ul {
     display: none;
     flex-direction: column;
+  }
+
+  #display .arrow {
+    font-size: 2.5vh !important;
+  }
+
+  #display {
+    padding: 0 !important;
+    height: 50vh;
+  }
+
+
+  #display .left {
+    transform: translateX(34px) !important;
+  }
+
+  #display .right {
+    transform: translateX(-34px) !important;
   }
 }
 
@@ -306,4 +327,64 @@ section {
   color: transparent;
   animation: rainbow_anim 6s infinite, float 2.5s infinite;
   background-size: 400% 10%;
+}
+
+.gallery {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.gallery img,
+#display img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s;
+  object-position: center;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 4px black;
+}
+
+.displayImg {
+  display: none;
+}
+
+#display img {
+  border-radius: 5px;
+  box-shadow: 0 0 6px black;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+#display .arrow {
+  font-size: 4vh;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  cursor: default;
+  transition: .2s ease;
+  border-radius: 5px;
+}
+
+#display .arrow:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#display .left {
+  transform: translateX(44px);
+}
+
+#display .right {
+  transform: translateX(-44px);
 }
