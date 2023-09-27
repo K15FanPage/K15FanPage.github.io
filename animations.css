@@ -47,12 +47,9 @@
     transform: scale(1);
   }
 }
+
 @keyframes float {
-<<<<<<< HEAD
   0% {
-=======
-  0%{
->>>>>>> 781944e14bbfdf0766b39aa696d037811bbe2f35
     transform: translateY(5px);
   }
   50% {
@@ -60,18 +57,15 @@
   }
   100% {
     transform: translateY(5px);
-<<<<<<< HEAD
-=======
   }
 }
 
 @keyframes rainbow_anim {
-  0%, 100% {
-    background-position: 0 0;
+  0%,100% {
+      background-position: 0 0;
   }
-  
+
   50% {
-    background-position: 100% 0;
->>>>>>> 781944e14bbfdf0766b39aa696d037811bbe2f35
+      background-position: 100% 0;
   }
 }
