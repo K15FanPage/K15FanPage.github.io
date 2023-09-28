@@ -356,7 +356,7 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: rainbow_anim 6s infinite, float 2.5s infinite;
+  animation: rainbow_anim 7s infinite, float 2.5s infinite;
   background-size: 400% 10%;
 }
 
@@ -394,6 +394,7 @@ section {
 }
 
 #display {
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
