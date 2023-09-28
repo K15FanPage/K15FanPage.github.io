@@ -48,6 +48,16 @@
   }
 }
 
+@keyframes zoom-in-extra {
+  from {
+    transform: scale(0.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 @keyframes float {
   0% {
     transform: translateY(5px);

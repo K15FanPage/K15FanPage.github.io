@@ -375,6 +375,10 @@ section {
   object-position: center;
 }
 
+.gallery .image {
+  animation: zoom-in-extra 1.2s;
+}
+
 .gallery img:hover {
   transform: scale(1.02);
   box-shadow: 0 0 4px black;
@@ -395,6 +399,7 @@ section {
   align-items: center;
   padding: 2rem;
   margin: 3rem 0;
+  animation: zoom-in-scale .7s;
 }
 
 #display .arrow {
