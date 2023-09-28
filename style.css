@@ -495,13 +495,32 @@ footer ul li a {
 }
 
 .about-us {
-  height: 50vh;
   font-size: 2.6vh;
 }
 
 #end-footer {
-  background-color: rgb(189, 189, 0);
+  background-color: rgb(157, 160, 0);
   font-size: 2vh;
   padding: 5px;
   color: black;
+}
+
+#about-us-subtitle {
+  margin: 15px 0;
+  padding: 2px;
+  text-align: left;
+  border: 1px solid black;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  height: 40px;
+}
+
+#about-us-subtitle span {
+  position: absolute;
+  animation: slide-left 1.3s;
+}
+
+#about-us-subtitle #right-slide {
+  animation: slide-right 1.3s !important;
 }
