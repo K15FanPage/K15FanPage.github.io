@@ -391,6 +391,7 @@ section {
 #display img {
   border-radius: 5px;
   box-shadow: 0 0 6px black;
+  width: 90%;
 }
 
 #display {
