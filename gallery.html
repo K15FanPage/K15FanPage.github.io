@@ -125,6 +125,19 @@
             <img src="img/logo/k15logo-original.png" alt="logo footer">
         </div>
     </footer>
+    <div id="end-footer">
+        <span>
+            &copy; K-15 Fan Page
+            <span id="footer-year"></span>
+        </span>
+
+        <script>
+            //footer year
+            let date = new Date();
+            document.getElementById("footer-year").innerHTML = date.getYear() + 1900;
+            console.log(date + 1900);
+        </script>
+    </div>
 
     <script src="index.js"></script>
 </body>

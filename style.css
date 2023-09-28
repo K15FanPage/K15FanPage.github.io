@@ -498,3 +498,10 @@ footer ul li a {
   height: 50vh;
   font-size: 2.6vh;
 }
+
+#end-footer {
+  background-color: rgb(189, 189, 0);
+  font-size: 2vh;
+  padding: 5px;
+  color: black;
+}
