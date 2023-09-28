@@ -487,16 +487,21 @@ footer ul {
 footer ul li {
   font-size: 2.5vh;
   margin: 5px 0;
-  transition: .25s ease;
+  transition: .3s ease;
 }
 
 footer ul li:hover {
   transform: translateX(7px);
 }
 
+footer ul li:hover a {
+  color: white;
+}
+
 footer ul li a {
   color: rgb(189, 189, 0);
   text-decoration: none;
+  transition: .3s ease;
 }
 
 .about-us {
