@@ -246,7 +246,8 @@ section {
   }
 
   .block h1 {
-    font-size: 2.7vh;
+    font-size: 2.5vh;
+    padding: 20px !important;
   }
 
   #videoPlayer iframe {
@@ -269,6 +270,12 @@ section {
   nav ul {
     display: none;
     flex-direction: column;
+    margin: 15px 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+    font-size: 2.7vh !important;
   }
 
   #display .arrow {
@@ -279,7 +286,6 @@ section {
     padding: 0 !important;
     height: 50vh;
   }
-
 
   #display .left {
     transform: translateX(34px) !important;
@@ -292,7 +298,9 @@ section {
   .gallery {
     grid-template-columns: auto auto !important;
   }
+}
 
+@media (max-width: 500px) {
   footer ul li {
     font-size: 2vh !important;
   }
@@ -306,8 +314,11 @@ section {
   }
 }
 
-@media (max-width: 500px) {
-  
+@media (max-width: 340px) {
+  .block h1 {
+    font-size: 2.5vh;
+    padding: 20px !important;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -481,4 +492,9 @@ footer ul li:hover {
 footer ul li a {
   color: rgb(189, 189, 0);
   text-decoration: none;
+}
+
+.about-us {
+  height: 50vh;
+  font-size: 2.6vh;
 }
