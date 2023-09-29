@@ -536,3 +536,24 @@ footer ul li a {
 #about-us-subtitle #right-slide {
   animation: slide-right 1.3s !important;
 }
+
+#readMore {
+  color: rgb(12, 0, 124);
+  transition: .2s ease;
+}
+
+#readMore:hover {
+  color: wheat;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+header img {
+  width: 60px;
+  height: 60px;
+}
