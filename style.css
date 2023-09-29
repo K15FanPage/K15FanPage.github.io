@@ -298,9 +298,17 @@ section {
   .gallery {
     grid-template-columns: auto auto !important;
   }
+
+  #about-us-subtitle span {
+    animation: none !important;
+  }
+
+  #about-us-subtitle #right-slide {
+    animation: none !important;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   footer ul li {
     font-size: 2vh !important;
   }
@@ -312,12 +320,30 @@ section {
   footer .logo {
     width: 40% !important;
   }
+
+  header {
+    gap: 3% !important;
+  }
+
+  header img {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 @media (max-width: 340px) {
   .block h1 {
     font-size: 2.5vh;
     padding: 20px !important;
+  }
+
+  header {
+    gap: 1% !important;
+  }
+
+  header img {
+    width: 30px !important;
+    height: 30px !important;
   }
 }
 
@@ -534,7 +560,7 @@ footer ul li a {
 }
 
 #about-us-subtitle #right-slide {
-  animation: slide-right 1.3s !important;
+  animation: slide-right 1.3s;
 }
 
 #readMore {
