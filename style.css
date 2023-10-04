@@ -616,10 +616,13 @@ header img {
 .song {
   width: 49%;
   margin: 15px 0;
-  transition: .3s ease-in-out;
 }
 
-.song:hover {
+.song a {
+  transition: .3s ease;
+}
+
+.song a:hover {
   transform: scale(1.02);
   filter: drop-shadow(0 0 5px black);
 }
