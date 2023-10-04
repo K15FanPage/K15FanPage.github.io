@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Songs </h1>
+    <nav>
+        <div class="responsive-nav">
+            <img id="openNav" src="img/burger_haus/nav-bar-ico.png" alt="Meni" onclick="openNav()">
+            <img id="closeNav" src="img/burger_haus/x-ico.png" alt="Tisni ja vratata da go tisnam na majka ti"
+                onclick="closeNav()">
+        </div>
+        <ul id="nav-ul">
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="soundboard.html">Soundboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-k15.html">About K-15</a></li>
+            <li><a href="songs.html">Songs</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="soundboard-wrapper">
+            <div class="soundboard">
+                <div class="kozna-pura block">
+                    <div class="layer">
+                        <h1>
+                            Kozna pura
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="decki-valcer block">
+                    <div class="layer">
+                        <h1>
+                            Decki valcer
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="kaj-e-pivoto block">
+                    <div class="layer">
+                        <h1>
+                            Kaj e pivoto be
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="abe-ja-sam-risto block">
+                    <div class="layer">
+                        <h1>
+                            More, ja sam Risto ti si Blazo
+                        </h1>
+                    </div>
+    </section>
+
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="soundboard.html">Soundboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-k15.html">About K-15</a></li>
+            <li><a href="songs.html">Songs</a></li>
+        </ul>
+
+        <div class="logo">
+            <img src="img/logo/k15logo-original.png" alt="logo footer">
+        </div>
+    </footer>
+    <div id="end-footer">
+        <span>
+            &copy; K-15 Fan Page
+            <span id="footer-year"></span>
+        </span>
+
+        <script>
+            //footer year
+            let date = new Date();
+            document.getElementById("footer-year").innerHTML = date.getYear() + 1900;
+            console.log(date + 1900);
+        </script>
+</body>
+
+</html>
