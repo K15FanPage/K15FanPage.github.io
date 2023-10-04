@@ -409,6 +409,10 @@ section {
   object-position: center;
 }
 
+.gallery img {
+  height: 320px;
+}
+
 .gallery .image {
   animation: zoom-in-extra 1.2s;
 }
