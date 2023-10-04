@@ -631,3 +631,62 @@ header img {
   text-decoration: none;
   color: black;
 }
+
+.roles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.character h1 {
+  padding: 1rem;
+}
+
+.character h3 {
+  margin: .5rem;
+}
+
+.role img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.role {
+  margin: 20px;
+  width: 400px;
+  height: 700px;
+  perspective: 1000px;
+}
+
+.role .container {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.role:hover .container {
+  transform: rotateY(180deg);
+}
+
+.role:hover h3 {
+  visibility: hidden;
+}
+
+.role img {
+  height: 500px;
+}
+
+.role .front,
+.role .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.role .back {
+  transform: rotateY(180deg);
+}

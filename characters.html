@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/k15logo-staro.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <!--ad sense-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351970168193347"
+        crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-9351970168193347">
+    <!--ad sense-->
+    <title>About K-15</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo/k15logo-original.png" alt="Logo">
+        <h1 id="main-title">About K-15</h1>
+        <img src="img/logo/k15logo-original.png" alt="Logo">
+    </header>
+
+    <nav>
+        <div class="responsive-nav">
+            <img id="openNav" src="img/burger_haus/nav-bar-ico.png" alt="Meni" onclick="openNav()">
+            <img id="closeNav" src="img/burger_haus/x-ico.png" alt="Tisni ja vratata da go tisnam na majka ti"
+                onclick="closeNav()">
+        </div>
+        <ul id="nav-ul">
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="soundboard.html">Soundboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-k15.html">About K-15</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="characters.html">Characters</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section characters">
+        <div class="container zoom-in">
+            <div class="character">
+                <h1>Branko Ognjanovski</h1>
+                <div class="roles">
+                    <div class="role">
+                        <div class="container">
+                            <h3>Mile Panika</h3>
+                            <div class="front">
+                                <img src="img/roles/mile-panika.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <p id="flip-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cum deserunt tenetur ipsa
+                                    hic perspiciatis excepturi, inventore vitae quo quis dignissimos repellendus, animi
+                                    adipisci aperiam a recusandae eveniet repudiandae sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In cum deserunt tenetur ipsa
+                                    hic perspiciatis excepturi, inventore vitae quo quis dignissimos repellendus, animi
+                                    adipisci aperiam a recusandae eveniet repudiandae sint.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="role">
+                        <div class="container">
+                            <h3>Blazo</h3>
+                            <img src="img/roles/blazo.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="role">
+                        <div class="container">
+                            <h3>The Albanian</h3>
+                            <img src="img/roles/the-abanian.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="role">
+                        <div class="container">
+                            <h3>The Greek</h3>
+                            <img src="img/roles/" alt="">
+                        </div>
+                    </div>
+                    <div class="role">
+                        <div class="container">
+                            <h3>The Ohrid man</h3>
+                            <img src="img/roles/the-ohrid-man.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="role">
+                        <div class="container">
+                            <h3>Johnny Dzhanak</h3>
+                            <img src="img/roles" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="soundboard.html">Soundboard</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about-k15.html">About K-15</a></li>
+            <li><a href="songs.html">Songs</a></li>
+            <li><a href="characters.html"></a></li>
+        </ul>
+
+        <div class="logo">
+            <img src="img/logo/k15logo-original.png" alt="logo footer">
+        </div>
+    </footer>
+    <div id="end-footer">
+        <span>
+            &copy; K-15 Fan Page
+            <span id="footer-year"></span>
+        </span>
+
+        <script>
+            //footer year
+            let date = new Date();
+            document.getElementById("footer-year").innerHTML = date.getYear() + 1900;
+            console.log(date + 1900);
+        </script>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
