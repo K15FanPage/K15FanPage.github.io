@@ -168,7 +168,15 @@ nav ul li a {
   background-image: url(img/hemoroidi.png);
   animation: slide-right 1s;
 }
-
+/*songs*/
+.kozna-pura{
+  background-image: url(img/kozna-pura.png);
+  animation: slide-right 1s;
+}
+.decki-valcer{
+  background-image: url(img/decki-valcer.png);
+  animation: slide-left 1s;
+}
 .block h1 {
   color: white;
   text-shadow: 0 0 5px black;
@@ -582,4 +590,18 @@ header {
 header img {
   width: 60px;
   height: 60px;
+}
+/*songs*/
+
+.songs{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 50% 50%;
+}
+.pesna{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
