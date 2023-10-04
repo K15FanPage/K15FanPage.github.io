@@ -2,12 +2,28 @@
 <html lang="en">
 
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo/k15logo-staro.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <meta name="keywords"
+        content="K15, K-15, fan, page, fanpage, fan page, fan-page, cacko, risto, blazo, toso maler, toso, mile, mile panika, sounboard">
+    <!--ad sense-->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9351970168193347"
+        crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-9351970168193347">
+    <!--ad sense-->
+    <title>K-15 Songs</title>
 </head>
 
 <body>
-    <h1> Songs </h1>
+    <header>
+        <img src="img/logo/k15logo-original.png" alt="Logo">
+        <h1 id="main-title">K-15 Songs</h1>
+        <img src="img/logo/k15logo-original.png" alt="Logo">
+    </header>
+
     <nav>
         <div class="responsive-nav">
             <img id="openNav" src="img/burger_haus/nav-bar-ico.png" alt="Meni" onclick="openNav()">
@@ -23,39 +39,58 @@
             <li><a href="songs.html">Songs</a></li>
         </ul>
     </nav>
-    <section>
-        <div class="soundboard-wrapper">
-            <div class="soundboard">
-                <div class="kozna-pura block">
-                    <div class="layer">
-                        <h1>
-                            Kozna pura
-                        </h1>
-                    </div>
-                </div>
 
-                <div class="decki-valcer block">
-                    <div class="layer">
-                        <h1>
-                            Decki valcer
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="kaj-e-pivoto block">
-                    <div class="layer">
-                        <h1>
-                            Kaj e pivoto be
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="abe-ja-sam-risto block">
-                    <div class="layer">
-                        <h1>
-                            More, ja sam Risto ti si Blazo
-                        </h1>
-                    </div>
+    <section class="main-section songs">
+        <div class="container">
+            <div class="song">
+                <a href="https://youtu.be/k2MneLZ3ZPo">
+                    <img src="img/songs/kozna-pura.png" alt="kozna pura">
+                    <h3>Kozna Pura</h3>
+                </a>
+            </div>
+            <div class="song">
+                <a href="https://youtu.be/ihMIhlcgfjQ?list=PL6jBF3QECkMIrQMXjNWisugjq61L14Hk3">
+                    <img src="img/songs/decki-valcer.png" alt="decki valcer">
+                    <h3>Decki Valcer</h3>
+                </a>
+            </div>
+            <div class="song">
+                <a href="https://youtu.be/qaj-WfdysXE?list=PL6jBF3QECkMIrQMXjNWisugjq61L14Hk3">
+                    <img src="img/songs/gradinarot.png" alt="gradinarot">
+                    <h3>Gradinarot</h3>
+                </a>
+            </div>
+            <div class="song">
+                <a href="https://youtu.be/NQjsY5nobjc?list=PL6jBF3QECkMIrQMXjNWisugjq61L14Hk3">
+                    <img src="img/songs/dedo-mraz-od-konjari.png" alt="dedo mraz od konjari">
+                    <h3>Dedo Mraz od Konjari</h3>
+                </a>
+            </div>
+            <div class="song">
+                <a href="https://youtu.be/pUoGfzC0U_M?list=PL6jBF3QECkMIrQMXjNWisugjq61L14Hk3">
+                    <img src="img/songs/shurup.png" alt="shurup">
+                    <h3>Shurup</h3>
+                </a>
+            </div>
+            <div class="song">
+                <a href="https://youtu.be/8x7MSNKzVag?list=PL6jBF3QECkMIrQMXjNWisugjq61L14Hk3">
+                    <img src="img/songs/bijjana-sajla-nemase.png" alt="biljana sajla nemase">
+                    <h3>Biljana Sajla Nemase</h3>
+                </a>
+            </div>
+            <div class="song">
+                <a href="https://youtu.be/5Ex31VVxgIc?list=PL6jBF3QECkMIrQMXjNWisugjq61L14Hk3">
+                    <img src="img/songs/celofan.png" alt="celofan">
+                    <h3>Celofan</h3>
+                </a>
+            </div>
+            <div class="song">
+                <a href="https://youtu.be/6a6NObXQVeI?list=PL6jBF3QECkMIrQMXjNWisugjq61L14Hk3">
+                    <img src="img/songs/mnogu-ljubam-da-veslam.png" alt="mnogu ljubam da veslam">
+                    <h3>Mnogu ljubam da veslam</h3>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -84,6 +119,9 @@
             document.getElementById("footer-year").innerHTML = date.getYear() + 1900;
             console.log(date + 1900);
         </script>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

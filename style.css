@@ -168,15 +168,7 @@ nav ul li a {
   background-image: url(img/hemoroidi.png);
   animation: slide-right 1s;
 }
-/*songs*/
-.kozna-pura{
-  background-image: url(img/kozna-pura.png);
-  animation: slide-right 1s;
-}
-.decki-valcer{
-  background-image: url(img/decki-valcer.png);
-  animation: slide-left 1s;
-}
+
 .block h1 {
   color: white;
   text-shadow: 0 0 5px black;
@@ -292,7 +284,7 @@ section {
 
   #display {
     padding: 0 !important;
-    height: 50vh;
+    height: 40vh !important;
   }
 
   #display .left {
@@ -313,6 +305,14 @@ section {
 
   #about-us-subtitle #right-slide {
     animation: none !important;
+  }
+
+  .song {
+    width: auto !important;
+  }
+
+  #random-vid-container {
+    margin: 2rem 0 !important;
   }
 }
 
@@ -591,17 +591,36 @@ header img {
   width: 60px;
   height: 60px;
 }
-/*songs*/
 
-.songs{
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 50% 50%;
+/*songs*/
+.song img {
+  width: 100%;
+  border-radius: 5px;
 }
-.pesna{
+
+.songs .container{
+  /*display: grid;
+  grid-gap: 2.5%;
+  grid-template-columns: 50% 50%;*/
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  gap: 2%;
+}
+
+.song {
+  width: 49%;
+  margin: 15px 0;
+  transition: .3s ease-in-out;
+}
+
+.song:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(0 0 5px black);
+}
+
+.song a {
+  text-decoration: none;
+  color: black;
 }
