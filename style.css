@@ -704,6 +704,14 @@ header img {
   transform: rotateY(180deg);
 }
 
-#separator {
+.separator {
   margin: 30px 0;
+}
+#karakteri-ul{
+  list-style-type: none;
+}
+#karakteri-ul li a{
+  text-decoration: none;
+  color: wheat;
+  text-shadow: 0 0 5px black;
 }
