@@ -788,3 +788,17 @@ header img {
   justify-content: center;
   align-content: center;
 }
+
+#send-fan-art {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  transition: .3s;
+}
+
+#send-fan-art:hover {
+  color: rgb(189, 189, 0);
+  background-color: black;
+  cursor: pointer;
+  padding: 10px 14px;
+}

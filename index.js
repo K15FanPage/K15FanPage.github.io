@@ -111,3 +111,7 @@ function watchVideo(vid) {
     }
   }
 }
+
+function sendFA() {
+  window.location.href="#";
+}
