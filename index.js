@@ -113,5 +113,5 @@ function watchVideo(vid) {
 }
 
 function sendFA() {
-  window.location.href="#";
+  window.location.href="http://prati-fanart.infinityfreeapp.com";
 }
