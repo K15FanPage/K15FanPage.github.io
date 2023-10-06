@@ -743,3 +743,48 @@ header img {
   filter: drop-shadow(0 0 3px black);
   transform: scale(1.04);
 }
+
+.fan-art,
+.fan-art .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fan-art {
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.fan-art .container {
+  margin: 1rem;
+  width: 80%;
+  gap: 20px;
+}
+
+.fan-art .arrow img {
+  width: 45px;
+  height: 45px;
+  box-shadow: none;
+  transition: .2s;
+}
+
+.fan-art .arrow img:hover {
+  filter: drop-shadow(0 0 2px black);
+}
+
+.fan-art img {
+  object-fit: cover;
+  box-shadow: 0 0 4px black;
+  border-radius: 5px;
+  width: 350px;
+  height: 470px;
+  margin: 2px;
+}
+
+.fan-art-gallery {
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
