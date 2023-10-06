@@ -51,6 +51,7 @@ nav ul li a {
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.3s ease;
+  background-position: center;
 }
 
 .block:hover {
@@ -381,8 +382,13 @@ section {
   transform: scale(1.03);
 }
 
-#content-title {
+.content-title {
   padding: 1.5rem;
+  animation: fade 2s, zoom-in-scale 1s;
+}
+
+.about-k15 p {
+  animation: fade 1.2s, zoom-out-scale 1s;
 }
 
 .rainbow {
@@ -715,3 +721,4 @@ header img {
   color: wheat;
   text-shadow: 0 0 5px black;
 }
+

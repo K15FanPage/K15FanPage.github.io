@@ -79,3 +79,13 @@
       background-position: 100% 0;
   }
 }
+
+@keyframes zoom-out-scale {
+  from {
+    transform: scale(1.12);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

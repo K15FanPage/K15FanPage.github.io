@@ -99,10 +99,15 @@ function watchVideo(vid) {
     'https://youtu.be/NosIDDkv2Ls?t=299',
     'https://youtu.be/hpQmR39-ZWQ?t=102',
     'https://youtu.be/2PP7Le_3v74?t=70',
-    'https://youtu.be/NosIDDkv2Ls?t=43'
+    'https://youtu.be/NosIDDkv2Ls?t=43',
+    'https://youtu.be/RmAGSL3r-y0'
   ]
 
-  if (confirm("Do you want to watch the video?")) {
-    window.location.href = videoLink[vid];
+  let vidLeng = videoLink.length;
+  
+  if(vid > -1) {
+    if (confirm("Do you want to watch the video?")) {
+      window.location.href = videoLink[vid];
+    }
   }
 }
