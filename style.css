@@ -746,6 +746,8 @@ header img {
   transform: scale(1.04);
 }
 
+/*fan-art*/
+
 .fan-art,
 .fan-art .container {
   display: flex;
@@ -818,5 +820,27 @@ header img {
   .fan-art img {
     width: 250px;
     height: 300px;
+  }
+}
+
+@media (max-width: 380px) {
+  .fan-art .arrow img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 330px) {
+  .fan-art {
+    margin: 2rem 0;
+  }
+
+  .fan-art img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .fan-art-gallery {
+    gap: 0;
   }
 }
